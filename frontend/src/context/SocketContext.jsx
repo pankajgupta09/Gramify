@@ -9,6 +9,8 @@ export const useSocket = () => {
 	return useContext(SocketContext);
 };
 
+
+// online user status section
 export const SocketContextProvider = ({ children }) => {
 	const [socket, setSocket] = useState(null);
 	const [onlineUsers, setOnlineUsers] = useState([]);
